@@ -75,7 +75,7 @@ class Popup_ModifyProduct : Popup() {
                 p1.state
             )
 
-            val p2 = dao.get(p1.unique_number)
+            val p2 = dao.get(p1.id)
 
             if(p2 != null){
                 dao.updateProduct(p1)
