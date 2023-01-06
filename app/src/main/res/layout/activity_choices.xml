@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade"
+    tools:context="com.example.linventaire.ChoicesActivity"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/layout1">
+
+        <Button
+            android:id="@+id/scans_button"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:backgroundTint="@color/marine"
+            android:text="Scan"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/products_list_button"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/marine"
+            android:text="Produits"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/users_list_button"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/marine"
+            android:text="Employés"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout_button"
+        android:textColor="@color/white"
+        android:text="&#9032;"
+        android:textSize="20dp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/marine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
